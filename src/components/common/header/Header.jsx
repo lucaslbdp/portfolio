@@ -1,10 +1,14 @@
 import React from "react";
 import Cv from "./Cv";
-import me from "../../../assets/me.png";
 import HeaderSocials from "./HeaderSocials";
+import Lottie from "react-lottie";
+import imgDeveloper from "../../../static/imgDeveloper.json";
 import "./header.css";
 
 const Header = () => {
+  const imgStart = {loop:true, autoplay: true, animationData:imgDeveloper}
+
+
   return (
     <header id="#">
       <div className="container header__container">
@@ -15,7 +19,7 @@ const Header = () => {
         <HeaderSocials />
 
         <div className="me">
-          <img src={me} alt="me" />
+          <Lottie options={imgStart} height={380} width={300}/>
         </div>
         <a href="#contact" className="scroll__down">
           Scroll down
