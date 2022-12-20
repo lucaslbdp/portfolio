@@ -1,30 +1,33 @@
 import React from "react";
-import portfolio1 from "../../assets/portfolio1.jpg";
-import portfolio2 from "../../assets/portfolio2.PNG";
+import mern from "../../assets/mern.jpg"
+import swapi from "../../assets/swapi.PNG";
+import capez from "../../assets/capez.PNG";
 import "./portfolio.css";
 
 const Portfolio = () => {
   const data = [
     {
       id: 1,
-      image: portfolio1,
-      title: "Swapi api de star wars",
-      github: "https://github.com",
-      demo: "www.google.com.ar",
+      image: mern,
+      title: "E-commerce",
+      description:"Proyecto full stack en desarrollo",
+      github: null,
+      demo: null
     },
     {
         id: 2,
-        image: portfolio1,
-        title: "Swapi api de star wars",
+        image: swapi,
+        title: "Swapi",
+        description: "Llamada a api de stars wars",
         github: "https://github.com",
         demo: "www.google.com.ar",
       },
       {
         id: 3,
-        image: portfolio2,
+        image: capez,
         title: "Capez Comunicaciones",
         description:"Pagina realizada en wordpress",
-        github: "https://github.com",
+        github: null,
         demo: "https://capez.com.ar/",
       }
   ];
